@@ -1,0 +1,13 @@
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\bin\Debug\netcoreapp3.1\näsan01.exe
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\bin\Debug\netcoreapp3.1\näsan01.deps.json
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\bin\Debug\netcoreapp3.1\näsan01.runtimeconfig.json
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\bin\Debug\netcoreapp3.1\näsan01.runtimeconfig.dev.json
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\bin\Debug\netcoreapp3.1\näsan01.dll
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\bin\Debug\netcoreapp3.1\näsan01.pdb
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.csprojAssemblyReference.cache
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.AssemblyInfoInputs.cache
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.AssemblyInfo.cs
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.csproj.CoreCompileInputs.cache
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.dll
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.pdb
+C:\Users\lukas.gates\Documents\MEGAsync\PROG2\Näsan01\näsan01\obj\Debug\netcoreapp3.1\näsan01.genruntimeconfig.cache
