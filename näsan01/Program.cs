@@ -31,7 +31,7 @@ namespace näsan01
                 Console.ReadLine();
                 while (answer != "noname nopass")
                 {
-                    Console.WriteLine ("Try again");
+                    Console.WriteLine("Try again");
                     answer = Console.ReadLine();
                 }
                 Console.WriteLine("Welcome!");
@@ -40,12 +40,62 @@ namespace näsan01
 
             //Punkt 4 i övnings dokumentet
             int x = 0;
-            while ( x<32)
+            while (x < 32)
             {
                 Console.WriteLine("Hello, World");
                 x++;
             }
             Console.ReadLine();
+
+
+            //punkt 6 i övnings dokumentet
+            int y = 0;
+            while (y < 5)
+            {
+                Console.WriteLine("Skriv ett tal");
+                string input = Console.ReadLine();
+                int nummer = 5;
+                int.TryParse(input, out nummer);
+
+
+
+                if (nummer > 5)
+                {
+                    Console.WriteLine("högre än 5!");
+                    y++;
+                }
+                else
+                {
+                    y++;
+                }
+
+            }
+
+            /* Försökt börja på punkt 7.
+            Måste fortsätta eller göra om för att den ska fungera, under nästa lektion.
+            int z = 0;
+            while (z == 0)
+            {
+                string input = Console.ReadLine();
+                int nummer = 0;
+                int.TryParse(input, out nummer);
+
+              
+              
+                if (nummer == 0)
+                {
+                    
+                }
+                else{
+                    
+                }
+            }
+            */
+
+            Console.ReadLine();
+
+
+
         }
     }
 }
