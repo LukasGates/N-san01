@@ -10,13 +10,15 @@ namespace näsan01
         static void Main(string[] args)
         {
             //Punkt 1 i övnings dokumentet
+            //lägger in siffran 6
             int i = 6;
-
+            //Om 6 är större eller lika med 3 så skrivs hello world
             if (i >= 3)
                 Console.WriteLine("Hello, World!");
             Console.ReadLine();
 
             //punkt 2,3 och 5 i övnings dokumentet
+            //if-sats som skriver ut "Welcome!" om användarnamnet som anges är lika med "noname" och lösenordet är "nopass".
             Console.WriteLine("Enter username and password:");
 
             string answer = Console.ReadLine();
@@ -25,12 +27,14 @@ namespace näsan01
             {
                 Console.WriteLine("Welcome!");
             }
+            //Om lösenordet och eller användarnamnet inte stämmer skrivs detta ut:
             else
             {
                 Console.WriteLine("Wrong username or password");
                 Console.ReadLine();
                 while (answer != "noname nopass")
                 {
+                    //(loopen fortsätter så länge användaren inte har skrivit in rätt namn och lösenord)
                     Console.WriteLine("Try again");
                     answer = Console.ReadLine();
                 }
@@ -39,6 +43,7 @@ namespace näsan01
             Console.ReadLine();
 
             //Punkt 4 i övnings dokumentet
+            //en while loop som skriver ut "Hello, World" 32 gånger
             int x = 0;
             while (x < 32)
             {
@@ -49,6 +54,7 @@ namespace näsan01
 
 
             //punkt 6 i övnings dokumentet
+            //en loop som körs 5 gånger och där varje gång loopen körs ska användaren skriva in ett tal.
             int y = 0;
             while (y < 5)
             {
@@ -58,7 +64,7 @@ namespace näsan01
                 int.TryParse(input, out nummer);
 
 
-
+                // Om det angivna talet är högre än 5 så skriv ut “högre än 5!”
                 if (nummer > 5)
                 {
                     Console.WriteLine("högre än 5!");
@@ -71,26 +77,14 @@ namespace näsan01
 
             }
 
-            /* Försökt börja på punkt 7.
-            Måste fortsätta eller göra om för att den ska fungera, under nästa lektion.
-            int z = 0;
-            while (z == 0)
-            {
-                string input = Console.ReadLine();
-                int nummer = 0;
-                int.TryParse(input, out nummer);
+            //Punkt 7
+            //Behöver hjälp, har svårt med denna
+            Console.WriteLine("skriv något"); 
+            string tal = Console.ReadLine();
+            int resultat;
+            bool lyckad = int.TryParse(tal, out resultat);
 
-              
-              
-                if (nummer == 0)
-                {
-                    
-                }
-                else{
-                    
-                }
-            }
-            */
+            
 
             Console.ReadLine();
 
