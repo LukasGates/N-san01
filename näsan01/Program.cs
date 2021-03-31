@@ -9,6 +9,8 @@ namespace näsan01
     {
         static void Main(string[] args)
         {
+
+            
             //Punkt 1 i övnings dokumentet
             //lägger in siffran 6
             int i = 6;
@@ -76,17 +78,37 @@ namespace näsan01
                 }
 
             }
-
-            //Punkt 7
-            //Behöver hjälp, har svårt med denna
-            Console.WriteLine("skriv något"); 
-            string tal = Console.ReadLine();
-            int resultat;
-            bool lyckad = int.TryParse(tal, out resultat);
-
             
 
-            Console.ReadLine();
+            //Punkt 7
+            //Skriv kommentar nästa lektion
+            Console.WriteLine("skriv något");
+            string playerInput = Console.ReadLine();
+            int result = 0;
+            bool sucess = int.TryParse(playerInput, out result);
+
+            while (sucess != true)
+            {
+                playerInput = Console.ReadLine();
+                sucess = int.TryParse(playerInput, out result);
+            }
+            
+            //Punkt 8
+            //Skriv kommentar nästa lektion
+            Console.WriteLine("Gissa siffran som jag tänker på. PS det är mindre än 5");
+            string newInput = Console.ReadLine();
+            int result2;
+            bool success = int.TryParse(newInput, out result2);
+
+            while (success != true || result2 != 4)
+            {
+                Console.WriteLine("Du har gissat fel eller inte skrivit in en siffra, försök igen");
+                newInput = Console.ReadLine();
+                success = int.TryParse(newInput, out result2);
+            }
+
+            Console.WriteLine("Grattis, du har gissat rätt!");
+
 
 
 
