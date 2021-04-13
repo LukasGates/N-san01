@@ -81,12 +81,14 @@ namespace näsan01
             
 
             //Punkt 7
-            //Skriv kommentar nästa lektion
+            //Användaren tillbes att skriva något. Om användaren skriver en string som inte kan konverteras till en int måste dem försöka igen.
+            //Men om de skriver en string som kan konverteras till en int får dem gå vidare.
             Console.WriteLine("skriv något");
             string playerInput = Console.ReadLine();
             int result = 0;
             bool sucess = int.TryParse(playerInput, out result);
-
+            
+            //Kan stringen inte konverteras får de försöka igen:
             while (sucess != true)
             {
                 playerInput = Console.ReadLine();
@@ -94,21 +96,33 @@ namespace näsan01
             }
             
             //Punkt 8
-            //Skriv kommentar nästa lektion
+            //Jag väljer ett tal som användaren ska gissa och jag låter dem inte gå vidare förän de har gissar rätt.
+            /*Jag gör om deras svar till en Int så koden kan tolka siffror istället för ord. Om konverteringen till en Int lyckas skickas det till
+            en while där deras svar jämförs med det korrekta svaret.*/
             Console.WriteLine("Gissa siffran som jag tänker på. PS det är mindre än 5");
             string newInput = Console.ReadLine();
             int result2;
             bool success = int.TryParse(newInput, out result2);
 
-            while (success != true || result2 != 4)
+            while (success != true || result2 < 4)
             {
-                Console.WriteLine("Du har gissat fel eller inte skrivit in en siffra, försök igen");
+                //Jag ger användaren ett felmedelande när de gissar fel och en ledtråd om de ska försöka gissa högre eller lägre.
+                Console.WriteLine("Du har gissat fel eller inte skrivit in en siffra, försök igen med ett HÖGRE nummer");
                 newInput = Console.ReadLine();
                 success = int.TryParse(newInput, out result2);
             }
-
+            while (success != true || result2 > 4)
+            {
+                //Jag ger användaren ett felmedelande när de gissar fel och en ledtråd om de ska försöka gissa högre eller lägre.
+                Console.WriteLine("Du har gissat fel eller inte skrivit in en siffra, försök igen med ett LÄGRE nummer");
+                newInput = Console.ReadLine();
+                success = int.TryParse(newInput, out result2);
+            }
+            //Vid rätt gissat svar skickas man förbi while looparna och man blir grattulerad till att man klarade spelet.
             Console.WriteLine("Grattis, du har gissat rätt!");
-
+            Console.ReadLine();
+            Console.WriteLine("Nu är det slut. Hejdå!");
+            Console.ReadLine();
 
 
 
