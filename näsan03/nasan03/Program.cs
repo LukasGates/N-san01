@@ -56,14 +56,14 @@ namespace nasan03
 
             }
             Console.WriteLine("arean av cirkeln är " + CirkelArea(2f, 3.14f));
-            
+
 
             //Punkt 6
             static int GetNumberInput()
             {
-               // string GetNumberInput = Console.ReadLine();
+                // string GetNumberInput = Console.ReadLine();
                 int result = 0;
-               // bool sucess = int.TryParse(GetNumberInput, out result);
+                // bool sucess = int.TryParse(GetNumberInput, out result);
 
                 //Kan stringen inte konverteras får de försöka igen:
                 while (result == 0)
@@ -72,10 +72,32 @@ namespace nasan03
                     string GetNumberInput = Console.ReadLine();
                     bool sucess = int.TryParse(GetNumberInput, out result);
                 }
-        
+
                 return result;
             }
-            Console.WriteLine("Ditt returnerade nummer "+ GetNumberInput());
+            Console.WriteLine("Ditt returnerade nummer " + GetNumberInput());
+            
+            //Punkt 7
+            static int GetChoice(string string1, string string2, string string3)
+            {
+                int result = 0;
+                Console.WriteLine("String1: " + string1 + " | " + "String2: " + string2 + " | " + "String3: " + string3);
+                Console.WriteLine("Välj string 1, 2 eller 3 genom att skriva vilket nummer");
+
+                string playerInput = Console.ReadLine().Trim();
+                bool sucess = int.TryParse(playerInput, out result);
+
+                while (result > 3 || result < 1)
+                {
+                    System.Console.WriteLine("ERROR");
+
+                    playerInput = Console.ReadLine().Trim();
+                    sucess = int.TryParse(playerInput, out result);
+                }
+
+                return result;
+            }
+            Console.WriteLine("Du valde " + GetChoice("1", "2", "3"));
             Console.ReadLine();
 
 
