@@ -77,7 +77,7 @@ namespace nasan03
             }
             Console.WriteLine("Ditt returnerade nummer " + GetNumberInput());
             
-            //Punkt 7 + förbättring
+            //Punkt 7 + förbättring. PS fick lite hjälp med förbättringen.
             static int GetChoice(string[] strings)
             {
                 int result = 0;
