@@ -77,17 +77,19 @@ namespace nasan03
             }
             Console.WriteLine("Ditt returnerade nummer " + GetNumberInput());
             
-            //Punkt 7
-            static int GetChoice(string string1, string string2, string string3)
+            //Punkt 7 + förbättring
+            static int GetChoice(string[] strings)
             {
                 int result = 0;
-                Console.WriteLine("String1: " + string1 + " | " + "String2: " + string2 + " | " + "String3: " + string3);
-                Console.WriteLine("Välj string 1, 2 eller 3 genom att skriva vilket nummer");
-
+                for (int i = 0; i < strings.Length; i++)
+                {
+                    System.Console.WriteLine(i + ": " + " | " + "String: " + strings[i]);
+                }
+                Console.WriteLine("Välj en string med ett nummer");
                 string playerInput = Console.ReadLine().Trim();
                 bool sucess = int.TryParse(playerInput, out result);
 
-                while (result > 3 || result < 1)
+                while (result > strings.Length -1 || result < 0)
                 {
                     System.Console.WriteLine("ERROR");
 
@@ -95,9 +97,11 @@ namespace nasan03
                     sucess = int.TryParse(playerInput, out result);
                 }
 
-                return result;
+                return result + 1;
             }
-            Console.WriteLine("Du valde " + GetChoice("1", "2", "3"));
+
+            string[] toImport = {"1", "2", "3"};
+            Console.WriteLine("Du valde " + GetChoice(toImport));
             Console.ReadLine();
 
 
