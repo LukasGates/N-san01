@@ -7,7 +7,7 @@ namespace nasan04
 
         private int weight;
 
-        public int Rock(int kg)
+        public Rock(int kg)
         {
             weight = kg;
         }
