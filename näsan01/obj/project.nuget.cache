@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "K3/CrkiVZfWpHS1xDQxmtEIKLMNtPrfab8bTIujPs8H7/H2i5i50hxuRX1EDIoja4z22Ha8ADuufJVaL0hDMcw==",
+  "dgSpecHash": "Wk8c7yG7vxbSdru1Rz4QTIwYHcfk9G7GuZo4SuxzN4aeSosCwR0Wiq3YC9v7khYUy2eQQ5J/rkpDSubPXVKZLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\lukas.gates\\Documents\\MEGAsync\\PROG2\\Näsan01\\näsan01\\näsan01.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas.gates\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
   "logs": []
 }
